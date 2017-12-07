@@ -14,8 +14,7 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |person|
       #binding.pry
-      @name = person[:name]
-      @location = person[:location]
+      Student.new(person)
       @@all << self
     end
   end
