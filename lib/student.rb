@@ -4,15 +4,9 @@ class Student
 
   @@all = []
 
-  def new(student_profile)
-    binding.pry
+  def initialize(student_hash)
     @name = student_profile[:name]
     @location = student_profile[:location]
-
-  end
-
-  def initialize(student_hash)
-
   end
 
   def self.create_from_collection(students_array)
