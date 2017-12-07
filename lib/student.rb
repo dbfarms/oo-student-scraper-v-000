@@ -4,6 +4,12 @@ class Student
 
   @@all = []
 
+  def new(student_profile)
+    @name = student_profile[:name]  
+    @location = student_profile[:location]
+    
+  end 
+
   def initialize(student_hash)
     
   end
