@@ -5,9 +5,10 @@ class Student
   @@all = []
 
   def new(student_profile)
+    binding.pry
     @name = student_profile[:name]
     @location = student_profile[:location]
-    binding.pry
+
   end
 
   def initialize(student_hash)
