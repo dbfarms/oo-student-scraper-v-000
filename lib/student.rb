@@ -12,9 +12,12 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    binding.pry
-    @name = students_array[:name]
-    @@all << self
+    #binding.pry
+    students_array.each do |person|
+      @name = students_array[:name]
+      @location = students_array[:location]
+      @@all << self
+    end
   end
 
   def add_student_attributes(attributes_hash)
