@@ -13,6 +13,7 @@ class Student
 
   def self.create_from_collection(students_array)
     @name = students_array[:name]
+    @@all << self
   end
 
   def add_student_attributes(attributes_hash)
